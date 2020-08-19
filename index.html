@@ -53,6 +53,8 @@ a:hover{
 	,
 	{ id: "brainsurge", title: "BrainSurge: Behind the Scenes", tags: ["personal"] }
 	,
+	{ id: "salmagundi", title: "Salmagundi", tags: ["personal"] }
+	,
 	null
 	]
 
@@ -64,7 +66,7 @@ a:hover{
 	  document.write("</li>") ;
 	}
 
-	for (var i = 0; i < 2; ++i) {
+	for (var i = 0; i < (posts.length-1); ++i) {
 	  var a = posts[i] ;
 	  RenderArticleLink(a) ;
 	}
