@@ -1,6 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Brenda V. Castro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 500px;
+}
+
+a{
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+</style>
+
+</head>
+<link rel="icon" href="https://od.lk/s/MjRfMjc2Njc1OThf/Ying-Yang.png">
 <body>
-coming soon!
+
+<h1>Thoughts</h1>
+
+<script>
+	var posts = [
+	{ id: "unrequited-love", title: "Unrequited Love", tags: ["poems"] }
+	,
+	null
+	]
+
+	function RenderArticleLink(a) {
+	  document.write("<li>") ;
+	  document.write('<a href="http://matt.might.net/articles/'+a.id+'/">') ;
+	  document.write(a.title);
+	  document.write("</a>");
+	  document.write("</li>") ;
+	}
+
+	for (var i = 0; i < 2; ++i) {
+	  var a = posts[i] ;
+	  RenderArticleLink(a) ;
+	}
+</script>
+
+<p style="font-size: 10px; text-align: right;">Last updated Aug 19 2020</p>
+
 </body>
 </html>
