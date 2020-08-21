@@ -55,8 +55,6 @@ a:hover{
 	,
 	{ id: "brainsurge", title: "BrainSurge: Behind the Scenes", tags: ["personal"] }
 	,
-	{ id: "salmagundi", title: "Salmagundi", tags: ["personal"] }
-	,
 	null
 	]
 
@@ -74,7 +72,31 @@ a:hover{
 	}
 </script>
 
-<p><a href="https://brendavcastro.wordpress.com/">My Past Wordpress Blog</a></p>
+<h2>Links</h2>
+<script>
+	var links = [
+	{ id: "https://brendavcastro.wordpress.com/", title: "My Past Wordpress Blog", tags: ["personal"] }
+	,
+	{ id: "https://cs.nyu.edu/faculty/davise/Verses/", title: "Verses for the Information Age by Ernest Davis", tags: ["poems"] }
+	,
+	{ id: "https://www.reddit.com/r/aww/comments/ic3c02/lala_the_rescue_cat_shows_off_her_amazing_rock/?ref=share&ref_source=link", title: "A Bouldering Cat", tags: ["fun"] }
+	,
+	null
+	]
+
+	function RenderLink(a) {
+	  document.write("<li>") ;
+	  document.write('<a target="_blank" href="'+a.id+'">') ;
+	  document.write(a.title);
+	  document.write("</a>");
+	  document.write("</li>") ;
+	}
+
+	for (var i = 0; i < (links.length-1); ++i) {
+	  var a = links[i] ;
+	  RenderLink(a) ;
+	}
+</script>
 
 <p style="font-size: 10px; text-align: right;">Last updated Aug 19 2020</p>
 
