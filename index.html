@@ -24,6 +24,10 @@ h2 {
 	font-size: 30px;
 }
 
+/*h3{
+	text-decoration-line: underline;
+}
+*/
 a{
   color: #ff0000;
   text-decoration: none;
@@ -31,6 +35,11 @@ a{
 
 a:hover{
   text-decoration: underline;
+}
+
+li{
+	padding-left: 1em;
+	padding-bottom: 0.5em;
 }
 
 </style>
@@ -54,12 +63,19 @@ a:hover{
 <div class="gcse-search"></div>
 
 <script>
+	var my_order = [
+				"personal",
+				"books",
+				null
+				];
+
 	var posts = [
 	{id: "stem_to_psych", title: "STEM to Psychology", tags: ['personal']},
 	{id: "counting", title: "Counting with Backgammon and Ice Cream", tags: ["personal"]},
-	{ id: "unrequited-love", title: "Unrequited Love", tags: ["poems"] },
+	{id: "unrequited-love", title: "Unrequited Love", tags: ["personal"] },
+	{id: "moment_of_insight", title: "A Moment of Insight", tags: ["books"] },
 	null
-	]
+	];
 
 	function RenderArticleLink(a) {
 	  document.write("<li>") ;
@@ -69,13 +85,24 @@ a:hover{
 	  document.write("</li>") ;
 	}
 
-	for (var i = 0; i < (posts.length-1); ++i) {
-	  var a = posts[i] ;
-	  RenderArticleLink(a) ;
+	function WriteTag(tag){
+		document.write("<b>" + tag + "</b>");
+	}
+
+	for (var i = 0; i < (my_order.length-1); ++i){
+		var tag = my_order[i];
+		WriteTag(tag);
+		for (var k =0; k<(posts.length-1);++k){
+			if (posts[k].tags.includes(tag)){
+				var a = posts[k];
+				RenderArticleLink(a);
+			}
+		}
 	}
 </script>
 
-<h3>Links</h3>
+<h3>LINKS</h3>
+
 <li><a href= "https://brendavcastro.wordpress.com/" target="_blank"> My Past Wordpress Blog</a></li>
 <script>
 	var order = [
@@ -99,7 +126,7 @@ a:hover{
 
 	{ id: "https://cs.nyu.edu/faculty/davise/Verses/", title: "Verses for the Information Age by Ernest Davis", tags: ["poems"] },
 	null
-	]
+	];
 
 	function RenderLink(a) {
 	  document.write("<li>") ;
@@ -125,7 +152,7 @@ a:hover{
 	}
 </script>
 
-<p style="font-size: 10px; text-align: right;">Last updated Sep 19 2020</p>
+<p style="font-size: 10px; text-align: right;">Last updated Sep 28 2020</p>
 
 </body>
 </html>
