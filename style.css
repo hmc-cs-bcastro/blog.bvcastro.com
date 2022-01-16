@@ -7,14 +7,14 @@
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background: #ebd5b3;
+  background: #E6E6FA;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
-  color: #ff0000;
+  color: #4d3219;
   text-align: left;
   text-decoration: none;
   font-weight: bold;
@@ -23,7 +23,7 @@
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ebd5b3;
+  background-color: #E6E6FA;
   text-decoration: underline;
 }
 
@@ -34,18 +34,18 @@ body {
   max-width: 600px;
   font-size: 18px;
   line-height: 1.3em;
-  background: #ebd5b3;
+  background: #E6E6FA;
 }
 
 a{
-  color: #ff0000;
+  color: #4d3219;
   text-decoration: none;
-  background: #ebd5b3;
+  background: #E6E6FA;
 }
 
 a:hover{
   text-decoration: underline;
-  background: #ebd5b3;
+  background: #E6E6FA;
 }
 
 h2{
