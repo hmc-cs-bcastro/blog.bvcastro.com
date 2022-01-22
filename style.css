@@ -4,20 +4,20 @@
   box-sizing: border-box;
 }
 
-/*BACKGROUND: E6E6FA*/
-/*LINK COLOR: 4169e1*/
+/*BACKGROUND: ebd5b3*/
+/*LINK COLOR: ff0000*/
 
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background: #E6E6FA;
+  background: #ebd5b3;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
-  color: #4169e1;
+  color: #ff0000;
   text-align: left;
   text-decoration: none;
   font-weight: bold;
@@ -26,7 +26,7 @@
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #E6E6FA;
+  background-color: #ebd5b3;
   text-decoration: underline;
 }
 
@@ -37,18 +37,18 @@ body {
   max-width: 600px;
   font-size: 18px;
   line-height: 1.3em;
-  background: #E6E6FA;
+  background: #ebd5b3;
 }
 
 a{
-  color: #4169e1;
+  color: #ff0000;
   text-decoration: none;
-  background: #E6E6FA;
+  background: #ebd5b3;
 }
 
 a:hover{
   text-decoration: underline;
-  background: #E6E6FA;
+  background: #ebd5b3;
 }
 
 h2{
