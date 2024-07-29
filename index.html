@@ -40,7 +40,6 @@
 <script>
 	var my_order = [
 				"blog",
-				"personal",
 				null
 				];
 
@@ -50,13 +49,6 @@
 	{id: "https://docs.google.com/document/d/137EaUNOtOsn0eazVPvkd2OsXHjP3lUrA4db1vxKtaTI/edit?usp=share_link", title: "Gr-attitude", tags: ["blog"] },
 	{id: "https://sgcounselingnyc.com/gr-attitude/", title: "Gr-attitude on SG Wellness Blog", tags: ["blog"]},
 	{id: "https://docs.google.com/document/d/17HEhYw_CW1dPpKRh-1QjRTwXyTMC-CH7hSUrdPn1_gc/edit?usp=share_link", title: "For the Mental Health Utility Belt", tags: ["blog"] },
-
-
-	{id: "counting.html", title: "Counting with Backgammon and Ice Cream", tags: ["personal"]},
-
-	{id: "selected_quotes.html", title: "Selected Quotes", tags: ["personal"] },
-	{id: "moment_of_insight.html", title: "A Moment of Insight", tags: ["personal"] },
-	{id: "bullet_journal_method.html", title: "The Bullet Journal Method", tags: ["personal"] },
 
 	null
 	];
@@ -190,8 +182,51 @@
 
 
 
+<script>
+	var my_order = [
+				"personal",
+				null
+				];
 
-<p style="font-size: 10px; text-align: right;">Last updated Jun 12, 2024</p>
+	var posts = [
+
+	{id: "counting.html", title: "Counting with Backgammon and Ice Cream", tags: ["personal"]},
+
+	{id: "selected_quotes.html", title: "Selected Quotes", tags: ["personal"] },
+	{id: "moment_of_insight.html", title: "A Moment of Insight", tags: ["personal"] },
+	{id: "bullet_journal_method.html", title: "The Bullet Journal Method", tags: ["personal"] },
+
+	null
+	];
+
+	function RenderArticleLink(a) {
+	  document.write("<li>") ;
+	  // document.write('<a href="'+a.id+'.html">') ;
+	  document.write('<a target="_blank" href="'+a.id+'">') ;
+	  document.write(a.title);
+	  document.write("</a>");
+	  document.write("</li>") ;
+	}
+
+	function WriteTag(tag){
+		document.write("<b>" + tag + "</b>");
+	}
+
+	for (var i = 0; i < (my_order.length-1); ++i){
+		var tag = my_order[i];
+		// WriteTag(tag);
+		for (var k =0; k<(posts.length-1);++k){
+			if (posts[k].tags.includes(tag)){
+				var a = posts[k];
+				RenderArticleLink(a);
+			}
+		}
+	}
+</script>
+
+
+
+<p style="font-size: 10px; text-align: right;">Last updated Jul 2024</p>
 
 <!-- HIDDEN LINKS -->
 <p style="font-size: 10px; text-align: right; color: transparent;"><a style="color: transparent;" href="https://blog.bvcastro.com/stem_to_psych.html">STEM to Psych</a></p>
