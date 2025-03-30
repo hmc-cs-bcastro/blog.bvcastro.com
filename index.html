@@ -94,6 +94,7 @@
 	var order = [
 				
 				"self-care",
+				"phone apps",
 				"fun",
 				"health",
 				"misc",
@@ -103,29 +104,30 @@
 
 	var links = [
 
-	{ id: "https://breathly.app/", title: "Breathly Breathing Exercises App", tags: ["self-care"] },
-	{ id: "https://www.thinkwithclarity.com/", title: "CBT Thought App", tags: ["self-care"] },
-	{ id: "https://www.rootd.io/", title: "Rootd for Anxiety and Panic", tags: ["self-care"] },
+	{ id: "https://breathly.app/", title: "Breathly Breathing Exercises App", tags: ["phone apps"] },
+	{ id: "https://www.thinkwithclarity.com/", title: "CBT Thought App", tags: ["phone apps"] },
+	{ id: "https://www.rootd.io/", title: "Rootd for Anxiety and Panic", tags: ["phone apps"] },
 	{ id: "https://thequietplaceproject.xyz/", title: "A Quiet, Calm Space", tags: ["self-care"] },
-	{ id: "https://www.7cups.com/12033798", title: "7 Cups Peer Support", tags: ["self-care"] },
+	{ id: "https://www.7cups.com/12033798", title: "7 Cups Peer Support", tags: ["phone apps"] },
 	{ id: "https://forum.heartsupport.com/", title: "HeartSupport Peer Support", tags: ["self-care"] },
-	{ id: "https://app.shmoody.com/share", title: "Shmoody App", tags: ["self-care"] },
-	{ id: "https://app.befinch.com/invite/GYUT", title: "Finch App (invite code: AJBZA1N8KS)", tags: ["self-care"] },
-	{ id: "https://www.sixwingstudios.com/amaru", title: "Amaru App", tags: ["self-care"] },
-	{ id: "https://meditation.downdogapp.com/", title: "Meditation App", tags: ["self-care"] },
-	{ id: "https://mobile.va.gov/app/stair-coach", title: "Emotion Regulation App", tags: ["self-care"] },
-	{ id: "https://mobile.va.gov/app/act-coach", title: "ACT Coach App", tags: ["self-care"] },
-	{ id: "https://mobile.va.gov/app/mindfulness-coach", title: "Mindfulness App", tags: ["self-care"] },
-	{ id: "https://mobile.va.gov/app/cbt-i-coach", title: "CBT-i App", tags: ["self-care"] },
+	{ id: "https://app.shmoody.com/share", title: "Shmoody App", tags: ["phone apps"] },
+	{ id: "https://app.befinch.com/invite/GYUT", title: "Finch App", tags: ["phone apps"] },
+	{ id: "https://www.sixwingstudios.com/amaru", title: "Amaru App", tags: ["phone apps"] },
+	{ id: "https://meditation.downdogapp.com/", title: "Meditation App", tags: ["phone apps"] },
+	{ id: "https://mobile.va.gov/app/stair-coach", title: "Emotion Regulation App", tags: ["phone apps"] },
+	{ id: "https://mobile.va.gov/app/act-coach", title: "ACT Coach App", tags: ["phone apps"] },
+	{ id: "https://mobile.va.gov/app/mindfulness-coach", title: "Mindfulness App", tags: ["phone apps"] },
+	{ id: "https://mobile.va.gov/app/cbt-i-coach", title: "CBT-i App", tags: ["phone apps"] },
 	{ id: "https://deploymentpsych.org/blog/staff-perspective-why-we-don%E2%80%99t-recommend-wearable-sleep-trackers-assessment-and-treatment", title: "Track Sleep Manually", tags: ["self-care"] },
-	{ id: "https://mobile.va.gov/app/insomnia-coach", title: "Insomnia App", tags: ["self-care"] },
-	{ id: "https://daylio.net/", title: "Daylio Tracking and Journal App", tags: ["self-care"] },
-	{ id: "https://www.treatmyocd.com/", title: "NOCD App", tags: ["self-care"] },
-	{ id: "https://play.google.com/store/apps/details?id=br.com.youper&hl=en_US&gl=US", title: "Youper AI Therapy Chat App", tags: ["self-care"] },
+	{ id: "https://mobile.va.gov/app/insomnia-coach", title: "Insomnia App", tags: ["phone apps"] },
+	{ id: "https://daylio.net/", title: "Daylio Tracking and Journal App", tags: ["phone apps"] },
+	{ id: "https://www.treatmyocd.com/", title: "NOCD App", tags: ["phone apps"] },
+	{ id: "https://play.google.com/store/apps/details?id=br.com.youper&hl=en_US&gl=US", title: "Youper AI Therapy Chat App", tags: ["phone apps"] },
 	{ id: "https://markmanson.net/relationship-advice", title: "Relationship Advice", tags: ["self-care"] },
 	{ id: "AtlasoftheHeartListofEmotions.pdf", title: "List of Emotions from Brene Brown's <i>Atlas of the Heart</i>", tags: ["self-care"]},
 	{ id: "https://dialecticalbehaviortherapy.com/", title: "Dialectical Behavioral Therapy", tags: ["self-care"]},
-	{ id: "https://www.gottman.com/couples/apps/", title: "Gottman Relationship Decks", tags: ["self-care"]},
+	{ id: "https://www.gottman.com/couples/apps/", title: "Gottman Relationship Decks", tags: ["phone apps"]},
+	{ id: "https://apps.apple.com/us/app/ekkomi-stress-less-matcha-tea/id6482847734", title: "Ekkomi Meditation Ritual", tags: ["phone apps"]},
 
 
 	{ id: "http://pages.hmc.edu/alves/thesis.html", title: "The Thesis Statement", tags: ["misc"] },	
@@ -146,7 +148,7 @@
 	{ id: "https://www.ted.com/talks/peter_attia_is_the_obesity_crisis_hiding_a_bigger_problem?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare&fbclid=IwAR0cLbR1-0JPgj4ubJIebcETxN87it8eIX1U_ljz3hxpvbCVr45rKgF9l_U", title: "Obesity: Cause or Symptom? ", tags: ["health"] },
 	{ id: "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FgmC4Rm5cpOI%3Ffbclid%3DIwAR1tqsUCsmeDYybDwY1WYdWYpbhrGMr6ZRW6z317WL7ABJp3tfq_q4wWnpw&h=AT2ChfAqM05oyCdVZ09u93DIyNNwsdG2uaJhgCADdkBywbbCp0Kriwy7O5SWuoP4A8kKO9wiw7D-_IeyTR648RnqtsRofxQ74gjb5p98LWmpsvPXt2jvzgbS3ar0ZFaoJC9dMFS_b3i6nyqmhgh9_GzlII4PoiH2hXqoV-GeSecfMq2zwQyc", title: "Sugar: The Other White Powder", tags: ["health"]},
 	// { id: "https://kencko.me/3345734533180", title: "Kencko", tags: ["health"]},
-	{ id: "https://zombiesrungame.com/", title: "Zombies Run App", tags: ["health"]},
+	{ id: "https://zrx.app/", title: "Zombies Run App", tags: ["health"]},
 	// { id: "https://www.nike.com/nrc-app", title: "Nike Run App", tags: ["health"]},
 
 
@@ -232,7 +234,7 @@
 
 
 
-<p style="font-size: 10px; text-align: right;">Last updated February 2025</p>
+<p style="font-size: 10px; text-align: right;">Last updated Mar 2025</p>
 
 <!-- HIDDEN LINKS -->
 <p style="font-size: 10px; text-align: right; color: transparent;"><a style="color: transparent;" href="https://blog.bvcastro.com/stem_to_psych.html">STEM to Psych</a></p>
